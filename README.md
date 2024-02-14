@@ -14,7 +14,7 @@
 * 支持回调函数式写法:
 
   ```PHP
-  (Ekey) -> encode('1.txt', function($value) use ($fp){
+  (new fileLocker()) -> encode('1.txt', function($value) use ($fp){
       fwrite($fp, $value);
   });
   ```
